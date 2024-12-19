@@ -1,7 +1,64 @@
 /** CSS STYLE **/
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-.hello {
-  display: block;
+:root {
+  --layout-width: 1440px;
+  --content-width: 1110px;
+  
+  --white: #fff;
+  --translucent-white: #d7ccc0; /*полупрозрачный белый*/
+  --light: #f5f4f0;
+  --basic: #fe8a02;
+  --basic-dark: #42413c;
+  --dark: #2a2626;
+  --translucent-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
 
-  color: #fff;
+  --line-height-title: 1.2em;
+  --font-size-title-first: 72px;
+  --font-size-title-second: 60px;
+  --font-size-title-third: 34px;
+  --font-family-title: "Neucha", serif;
+
+  --line-height-basic: 1.6em;
+  --font-size: 16px;
+  --font-family-basic: "Open Sans", serif;  
+}
+
+body {
+  font-family: var(--font-family-basic);
+  font-size: var(--font-size);
+  line-height: var(--line-height-basic);
+  max-width: var(--layout-width);
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-family-title);
+  line-height: var(--line-height-title);
+}
+h1 {
+  font-size: var(--font-size-title-first);
+}
+h2 {
+  font-size: var(--font-size-title-second);
+}
+h3 {
+  font-size: var(--font-size-title-third);
+}
+
+section {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+
+  /* height: 714px;
+  background-color: var(--light);
+  border:#2a2626 1px solid; */
+}
+content {
+  max-width: var(--content-width);
+  max-height: 100%;
+  /* background-color: red; */
 }
